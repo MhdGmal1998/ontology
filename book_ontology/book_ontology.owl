@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-18 "http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#"
+     xml:base="http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-18="http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#buys -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-18;buys">
+        <rdfs:range rdf:resource="&untitled-ontology-18;book"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-18;customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#sells -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-18;sells">
+        <rdfs:range rdf:resource="&untitled-ontology-18;book"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-18;seller"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#buy_operation_id -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-18;buy_operation_id">
+        <rdfs:domain rdf:resource="&untitled-ontology-18;customer"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#first_name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-18;first_name">
+        <rdfs:domain rdf:resource="&untitled-ontology-18;seller"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#last_name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-18;last_name">
+        <rdfs:domain rdf:resource="&untitled-ontology-18;seller"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-18;name">
+        <rdfs:domain rdf:resource="&untitled-ontology-18;book"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#price -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-18;price">
+        <rdfs:domain rdf:resource="&untitled-ontology-18;book"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#seller_id -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-18;seller_id">
+        <rdfs:domain rdf:resource="&untitled-ontology-18;seller"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#writer_name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-18;writer_name">
+        <rdfs:domain rdf:resource="&untitled-ontology-18;book"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#Person -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#book -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#customer -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;customer">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-18;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#history -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;history">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-18;book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#literary -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;literary">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-18;book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#religious -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;religious">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-18;book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#sciences -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;sciences">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-18;book"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#seller -->
+
+    <owl:Class rdf:about="&untitled-ontology-18;seller">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-18;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#book1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;book1">
+        <rdf:type rdf:resource="&untitled-ontology-18;history"/>
+        <price rdf:datatype="&xsd;double">20.0</price>
+        <writer_name rdf:datatype="&xsd;string">gorg richard</writer_name>
+        <name rdf:datatype="&xsd;string">you can do it</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#book2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;book2">
+        <rdf:type rdf:resource="&untitled-ontology-18;sciences"/>
+        <price rdf:datatype="&xsd;double">30.12</price>
+        <writer_name rdf:datatype="&xsd;string">darwain</writer_name>
+        <name rdf:datatype="&xsd;string">types original</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#book3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;book3">
+        <rdf:type rdf:resource="&untitled-ontology-18;religious"/>
+        <price rdf:datatype="&xsd;int">45</price>
+        <name rdf:datatype="&xsd;string">mohammed prophet</name>
+        <writer_name rdf:datatype="&xsd;string">sami yousef</writer_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#book4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;book4">
+        <rdf:type rdf:resource="&untitled-ontology-18;literary"/>
+        <price rdf:datatype="&xsd;int">35</price>
+        <name rdf:datatype="&xsd;string">islamic poem</name>
+        <writer_name rdf:datatype="&xsd;string">taha ali</writer_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#customer1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;customer1">
+        <rdf:type rdf:resource="&untitled-ontology-18;customer"/>
+        <buy_operation_id rdf:datatype="&xsd;int">112321323</buy_operation_id>
+        <buys rdf:resource="&untitled-ontology-18;book1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#customer2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;customer2">
+        <rdf:type rdf:resource="&untitled-ontology-18;customer"/>
+        <buy_operation_id rdf:datatype="&xsd;int">2232134321</buy_operation_id>
+        <buys rdf:resource="&untitled-ontology-18;book2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#customer3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;customer3">
+        <rdf:type rdf:resource="&untitled-ontology-18;customer"/>
+        <buy_operation_id rdf:datatype="&xsd;int">1233126</buy_operation_id>
+        <buys rdf:resource="&untitled-ontology-18;book3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#customer4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;customer4">
+        <rdf:type rdf:resource="&untitled-ontology-18;customer"/>
+        <buy_operation_id rdf:datatype="&xsd;int">54324323</buy_operation_id>
+        <buys rdf:resource="&untitled-ontology-18;book4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#seller1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;seller1">
+        <rdf:type rdf:resource="&untitled-ontology-18;seller"/>
+        <seller_id rdf:datatype="&xsd;int">1234</seller_id>
+        <last_name rdf:datatype="&xsd;string">moneer</last_name>
+        <first_name rdf:datatype="&xsd;string">sami</first_name>
+        <sells rdf:resource="&untitled-ontology-18;book1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#seller2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;seller2">
+        <rdf:type rdf:resource="&untitled-ontology-18;seller"/>
+        <seller_id rdf:datatype="&xsd;int">122312</seller_id>
+        <last_name rdf:datatype="&xsd;string">ali</last_name>
+        <first_name rdf:datatype="&xsd;string">khalid </first_name>
+        <sells rdf:resource="&untitled-ontology-18;book2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#seller3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;seller3">
+        <rdf:type rdf:resource="&untitled-ontology-18;seller"/>
+        <seller_id rdf:datatype="&xsd;int">4322123</seller_id>
+        <last_name rdf:datatype="&xsd;string">salem</last_name>
+        <first_name rdf:datatype="&xsd;string">waleed</first_name>
+        <sells rdf:resource="&untitled-ontology-18;book3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed/ontologies/2022/4/untitled-ontology-18#seller4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-18;seller4">
+        <rdf:type rdf:resource="&untitled-ontology-18;seller"/>
+        <seller_id rdf:datatype="&xsd;int">12323412</seller_id>
+        <first_name rdf:datatype="&xsd;string">khalid</first_name>
+        <last_name rdf:datatype="&xsd;string">saeed</last_name>
+        <sells rdf:resource="&untitled-ontology-18;book4"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
